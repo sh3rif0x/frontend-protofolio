@@ -1,83 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
 
-<header class="header">
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <header class="header">
 
-<main>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+        </nav>
 
-    <section id="home"></section>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode" title="Light mode">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+        </button>
 
-    <section id="about"></section>
+    </header>
 
-    <section id="projects"></section>
 
-    <section id="contact"></section>
-    <section id="footer"></section>
+    <main>
 
-</main>
-<script src="./js/home.js"></script>
+        <section id="home"></section>
 
-<script>
+        <section id="about"></section>
 
- 
-async function loadSections() {
+        <section id="skills"></section>
 
-    try {
+        <section id="projects"></section>
 
-        const files = [
-            ["home", "./home.html"],
-            ["about", "./about.html"],
-            ["projects", "./projects.html"],
-            ["contact", "./contact.html"],
-            ["footer", "./footer.html"]
-        ];
+        <section id="contact"></section>
 
-        await Promise.all(
+        <section id="footer"></section>
 
-            files.map(async ([id, file]) => {
+    </main>
 
-                const response = await fetch(file);
 
-                if (!response.ok) {
-                    throw new Error(`Failed to load ${file}`);
-                }
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-                document.getElementById(id).innerHTML =
-                    await response.text();
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-            })
+    <script type="module" src="./js/main.js"></script>
 
-        );
-
-        // IMPORTANT:
-        // home.html now exists in the page
-        startTypingAnimation();
-
-    } catch (error) {
-
-        console.error("Loading error:", error);
-
-    }
-}
-
-loadSections();
-
-</script>
-
+    <script src="./js/home.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
+
 </html>

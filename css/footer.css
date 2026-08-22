@@ -1,19 +1,26 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
 #footer {
     min-height: auto;
+
     padding: 70px 8% 25px;
 
     display: block;
 
-    background: #080f1f;
+    background: var(--color-bg-footer);
 
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid var(--color-border-subtle);
 }
 
 .footer-content {
     max-width: 1200px;
+
     margin: 0 auto;
 
     display: grid;
+
     grid-template-columns: 1.5fr 1fr 1fr;
 
     gap: 60px;
@@ -21,13 +28,14 @@
 
 .footer-brand h2 {
     font-size: 28px;
+
     margin-bottom: 15px;
 }
 
 .footer-brand p {
     max-width: 400px;
 
-    color: #94a3b8;
+    color: var(--color-text-muted);
 
     line-height: 1.7;
 }
@@ -35,7 +43,9 @@
 .footer-links,
 .footer-socials {
     display: flex;
+
     flex-direction: column;
+
     gap: 14px;
 }
 
@@ -43,16 +53,19 @@
 .footer-socials a {
     width: fit-content;
 
-    color: #94a3b8;
+    color: var(--color-text-muted);
 
     text-decoration: none;
 
-    transition: 0.3s;
+    transition:
+        color var(--transition-base),
+        transform var(--transition-base);
 }
 
 .footer-links a:hover,
 .footer-socials a:hover {
-    color: #6366f1;
+    color: var(--color-primary);
+
     transform: translateX(4px);
 }
 
@@ -60,50 +73,48 @@
     max-width: 1200px;
 
     margin: 50px auto 0;
+
     padding-top: 25px;
 
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid var(--color-border-subtle);
 
     text-align: center;
 }
 
 .footer-bottom p {
-    color: #64748b;
+    color: var(--color-text-subtle);
+
     font-size: 14px;
 }
 
-
-/* Tablet */
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 800px) {
-
     .footer-content {
         grid-template-columns: 1fr 1fr;
+
         gap: 40px;
     }
 
     .footer-brand {
         grid-column: 1 / -1;
     }
-
 }
 
-
-/* Mobile */
-
 @media (max-width: 500px) {
-
     #footer {
         padding: 60px 25px 25px;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
+
         gap: 35px;
     }
 
     .footer-brand {
         grid-column: auto;
     }
-
 }

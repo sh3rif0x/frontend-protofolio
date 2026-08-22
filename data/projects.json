@@ -1,0 +1,46 @@
+[
+    {
+        "title": "ProCleaning",
+        "description": "A responsive cleaning services landing page built with HTML, CSS, and JavaScript, featuring services, pricing plans, testimonials, blog posts, and contact sections.",
+        "image": "./../assets/projects/project1.png",
+        "github": "https://github.com/sh3rif0x/pro_cleaning",
+        "live": "https://pro-cleaning-kappa.vercel.app/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "Clean Code",
+        "description": "A Next.js app showcasing clean code principles and examples, with animations and a modern UI.",
+        "image": "./../assets/projects/project4.png",
+        "github": "https://github.com/sh3rif0x/cleancode",
+        "live": "https://cleancode-six.vercel.app/",
+        "tags": [
+            "Next.js",
+            "JavaScript",
+            "CSS"
+        ]
+    },
+    {
+        "title": "Jessy Farm",
+        "description": "A responsive React frontend for a farm business, showcasing services and products with an about page and social links.",
+        "image": "./../assets/projects/project2.png",
+        "github": "https://github.com/sh3rif0x/jessy_farm",
+        "live": "https://jessy-farm-zsmb.vercel.app/",
+        "tags": [
+            "React",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "Shziy",
+        "description": "Your Shziy project description here.",
+        "image": "./../assets/projects/project3.png",
+        "github": "YOUR_SHZIY_GITHUB_URL",
+        "live": "YOUR_SHZIY_LIVE_URL",
+        "tags": []
+    }
+]

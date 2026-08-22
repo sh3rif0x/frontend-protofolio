@@ -1,0 +1,118 @@
+/* =========================================================
+   SKILLS PAGE
+   ========================================================= */
+
+#skills {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            var(--color-hero-glow),
+            transparent 35%
+        ),
+        var(--color-bg-primary);
+}
+
+.skills-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+/* =========================================================
+   SKILLS GRID
+   ========================================================= */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.skill-card {
+    padding: 30px;
+
+    background: var(--color-bg-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 16px;
+
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--color-primary);
+
+    box-shadow:
+        0 15px 35px var(--color-primary-glow);
+}
+
+.skill-card h3 {
+    color: var(--color-text-primary);
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: var(--color-text-muted);
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.skill-level {
+    height: 8px;
+
+    overflow: hidden;
+
+    background: var(--color-bg-primary);
+
+    border-radius: 100px;
+}
+
+.skill-level span {
+    display: block;
+
+    height: 100%;
+
+    width: var(--skill-level);
+
+    background: var(--color-primary);
+
+    border-radius: inherit;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #skills {
+        padding-top: 100px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+}

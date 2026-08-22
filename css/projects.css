@@ -1,9 +1,15 @@
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
 #projects {
-    background: #0f172a;
+    background: var(--color-bg-primary);
 }
 
 .projects-content {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .projects-grid {
@@ -12,57 +18,88 @@
     gap: 25px;
 }
 
-
-/* Project Card */
+/* =========================================================
+   CARD
+   ========================================================= */
 
 .project-card {
-    overflow: hidden;
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 14px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
     position: relative;
+    overflow: hidden;
+
+    background: var(--color-bg-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base);
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    border-color: #6366f1;
+    border-color: var(--color-primary);
 }
 
-
-/* Project Image */
+/* =========================================================
+   IMAGE
+   ========================================================= */
 
 .project-image {
     height: 220px;
+
     position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #312e81;
-    color: #c7d2fe;
-    font-size: 24px;
+
+    background: var(--color-bg-surface-alt);
+
     overflow: hidden;
 }
 
+.project-image img {
+    width: 100%;
+    height: 100%;
 
-/* Overlay */
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform var(--transition-base);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
 
 .project-overlay {
     position: absolute;
     inset: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 12px;
-    background: rgba(15, 23, 42, 0.88);
+
+    background: var(--color-overlay-bg);
+
     opacity: 0;
     visibility: hidden;
+
     transform: translateY(10px);
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+
+    transition:
+        opacity var(--transition-base),
+        visibility var(--transition-base),
+        transform var(--transition-base);
 }
-
-
-/* Show overlay on hover */
 
 .project-card:hover .project-overlay {
     opacity: 1;
@@ -70,48 +107,50 @@
     transform: translateY(0);
 }
 
-
-/* Buttons */
+/* =========================================================
+   PROJECT BUTTONS
+   ========================================================= */
 
 .project-btn {
     padding: 12px 20px;
+
     border-radius: 8px;
+
     text-decoration: none;
+
     font-size: 14px;
     font-weight: 600;
-    transition: transform 0.2s ease, background 0.2s ease;
+
+    transition:
+        transform var(--transition-fast),
+        background-color var(--transition-fast);
 }
 
 .project-btn:hover {
     transform: translateY(-3px);
 }
 
-
-/* GitHub */
-
 .github-btn {
-    background: #ffffff;
-    color: #0f172a;
+    background: var(--color-input-text);
+    color: var(--color-bg-primary);
 }
 
 .github-btn:hover {
-    background: #e2e8f0;
+    background: var(--color-border-subtle);
 }
 
-
-/* Live Preview */
-
 .live-btn {
-    background: #6366f1;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
 }
 
 .live-btn:hover {
-    background: #4f46e5;
+    background: var(--color-primary-hover);
 }
 
-
-/* Project Info */
+/* =========================================================
+   INFO
+   ========================================================= */
 
 .project-info {
     padding: 25px;
@@ -123,13 +162,16 @@
 }
 
 .project-info p {
-    color: #94a3b8;
+    color: var(--color-text-muted);
+
     line-height: 1.7;
+
     margin-bottom: 20px;
 }
 
-
-/* Tags */
+/* =========================================================
+   TAGS
+   ========================================================= */
 
 .project-tags {
     display: flex;
@@ -139,23 +181,25 @@
 
 .project-tags span {
     padding: 6px 10px;
-    background: #0f172a;
+
+    background: var(--color-bg-primary);
+
     border-radius: 6px;
-    color: #818cf8;
+
+    color: var(--color-primary-light);
+
     font-size: 13px;
 }
 
-
-/* Tablet */
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 900px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-
-/* Mobile */
 
 @media (max-width: 600px) {
     .projects-grid {
