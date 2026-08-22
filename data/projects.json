@@ -42,5 +42,17 @@
         "github": "YOUR_SHZIY_GITHUB_URL",
         "live": "YOUR_SHZIY_LIVE_URL",
         "tags": []
+    },
+    {
+        "title": "Solid Law",
+        "description": "A modern responsive law firm website built with HTML, CSS, and Vanilla JavaScript, featuring a professional legal design, responsive layout, animations, and interactive sections.",
+        "image": "./../assets/projects/project5.png",
+        "github": "https://github.com/sh3rif0x/solid-law-website",
+        "live": "https://solid-law-website.vercel.app/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
     }
 ]
