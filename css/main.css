@@ -138,7 +138,7 @@ body {
    ========================================================= */
 
 section {
-    min-height: 100vh;
+    min-height: fit-content;
 
     padding: 120px 8%;
 
