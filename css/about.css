@@ -4,6 +4,9 @@
 
 #about {
     background: var(--color-bg-secondary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .about-content {
