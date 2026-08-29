@@ -54,5 +54,17 @@
             "CSS",
             "JavaScript"
         ]
-    }
+    },
+    {
+    "title": "Pure Taste",
+    "description": "A modern animated juice brand landing page built with HTML, CSS, and JavaScript, featuring smooth animations, interactive product sections, video content, and a premium visual experience.",
+    "image": "./../assets/projects/project6.png",
+    "github": "https://github.com/sh3rif0x/juice-frontend",
+    "live": "https://juice-frontend.vercel.app/",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ]
+}
 ]
