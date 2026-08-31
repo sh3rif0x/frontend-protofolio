@@ -39,8 +39,8 @@
         "title": "Shziy",
         "description": "Your Shziy project description here.",
         "image": "./../assets/projects/project3.png",
-        "github": "YOUR_SHZIY_GITHUB_URL",
-        "live": "YOUR_SHZIY_LIVE_URL",
+        "github": "https://shopsy-ecommerce-nu.vercel.app/home",
+        "live": "https://shopsy-ecommerce-nu.vercel.app/home",
         "tags": []
     },
     {
