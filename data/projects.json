@@ -1,16 +1,5 @@
 [
-    {
-        "title": "ProCleaning",
-        "description": "A responsive cleaning services landing page built with HTML, CSS, and JavaScript, featuring services, pricing plans, testimonials, blog posts, and contact sections.",
-        "image": "./../assets/projects/project1.png",
-        "github": "https://github.com/sh3rif0x/pro_cleaning",
-        "live": "https://pro-cleaning-kappa.vercel.app/",
-        "tags": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ]
-    },
+   
     {
         "title": "Clean Code",
         "description": "A Next.js app showcasing clean code principles and examples, with animations and a modern UI.",
@@ -66,5 +55,18 @@
         "CSS",
         "JavaScript"
     ]
-}
+} 
+,
+{
+        "title": "ProCleaning",
+        "description": "A responsive cleaning services landing page built with HTML, CSS, and JavaScript, featuring services, pricing plans, testimonials, blog posts, and contact sections.",
+        "image": "./../assets/projects/project1.png",
+        "github": "https://github.com/sh3rif0x/pro_cleaning",
+        "live": "https://pro-cleaning-kappa.vercel.app/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }
 ]
