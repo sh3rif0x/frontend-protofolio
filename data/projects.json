@@ -1,5 +1,40 @@
 [
-   
+    {
+        "title": "Coffee",
+        "description": "A modern responsive coffee shop website built with HTML, CSS, and JavaScript, featuring a coffee menu, about section, customer reviews, table booking, and a polished café-focused design.",
+        "image": "./../assets/projects/project7.png",
+        "github": "",
+        "live": "https://intern-byte.vercel.app/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "POLO360",
+        "description": "A modern fashion brand website focused on timeless apparel, featuring collections, services, journal content, newsletter signup, and a premium editorial-style user interface.",
+        "image": "./../assets/projects/project8.png",
+        "github": "",
+        "live": "https://polo-puce.vercel.app/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "PizzaHut",
+        "description": "A modern pizza ordering website featuring chef-made pizzas, customizable pizza options, sauces, side dishes, product details, pricing, ratings, and an interactive food ordering experience.",
+        "image": "./../assets/projects/project9.png",
+        "github": "",
+        "live": "https://pizza-hut-kappa.vercel.app/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
     {
         "title": "Clean Code",
         "description": "A Next.js app showcasing clean code principles and examples, with animations and a modern UI.",
@@ -26,11 +61,15 @@
     },
     {
         "title": "Shziy",
-        "description": "Your Shziy project description here.",
+        "description": "A modern e-commerce website with a responsive shopping interface and product-focused user experience.",
         "image": "./../assets/projects/project3.png",
-        "github": "https://shopsy-ecommerce-nu.vercel.app/home",
+        "github": "",
         "live": "https://shopsy-ecommerce-nu.vercel.app/home",
-        "tags": []
+        "tags": [
+            "React",
+            "JavaScript",
+            "CSS"
+        ]
     },
     {
         "title": "Solid Law",
@@ -45,19 +84,18 @@
         ]
     },
     {
-    "title": "Pure Taste",
-    "description": "A modern animated juice brand landing page built with HTML, CSS, and JavaScript, featuring smooth animations, interactive product sections, video content, and a premium visual experience.",
-    "image": "./../assets/projects/project6.png",
-    "github": "https://github.com/sh3rif0x/juice-frontend",
-    "live": "https://juice-frontend.vercel.app/",
-    "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-    ]
-} 
-,
-{
+        "title": "Pure Taste",
+        "description": "A modern animated juice brand landing page built with HTML, CSS, and JavaScript, featuring smooth animations, interactive product sections, video content, and a premium visual experience.",
+        "image": "./../assets/projects/project6.png",
+        "github": "https://github.com/sh3rif0x/juice-frontend",
+        "live": "https://juice-frontend.vercel.app/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
         "title": "ProCleaning",
         "description": "A responsive cleaning services landing page built with HTML, CSS, and JavaScript, featuring services, pricing plans, testimonials, blog posts, and contact sections.",
         "image": "./../assets/projects/project1.png",

@@ -454,3 +454,62 @@ section {
         top: 8px;
     }
 }
+
+/* Premium smooth hover system */
+* { transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+
+.navbar a,
+.btn,
+.project-card,
+.project-btn,
+.skill-card,
+.about-card,
+.skills-card,
+.social-icons a,
+.footer-links a,
+.footer-contact a,
+.contact-item a,
+.theme-toggle {
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                color 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                background 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navbar a:hover,
+.footer-links a:hover,
+.footer-contact a:hover,
+.contact-item a:hover {
+    transform: translateY(-2px);
+}
+
+.btn:hover,
+.project-btn:hover,
+.social-icons a:hover,
+.theme-toggle:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+.project-card:hover,
+.skill-card:hover,
+.about-card:hover,
+.skills-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card .project-image img {
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
