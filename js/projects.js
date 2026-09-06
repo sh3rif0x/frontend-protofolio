@@ -1,5 +1,5 @@
 async function initProjects() {
-    const projectsGrid = document.querySelector(".projects-grid");
+    const projectsGrid = document.getElementById("projects-grid");
 
     if (!projectsGrid) {
         console.log("projects-grid not found");

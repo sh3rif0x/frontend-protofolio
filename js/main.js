@@ -2,10 +2,10 @@ import { initContact } from "./contact.js";
 async function loadSections() {
     try {
         const files = [
-            ["home", "../sections/home.html"],
+            ["home", "./sections/home.html"],
             ["about", "./sections/about.html"],
-            ["projects", "./sections/projects.html"],
             ["skills", "./sections/skills.html"],
+            ["projects", "./sections/projects.html"],
             ["contact", "./sections/contact.html"],
             ["footer", "./sections/footer.html"]
         ];
@@ -26,6 +26,17 @@ async function loadSections() {
         startTypingAnimation();
         initProjects();
         initContact();
+
+        const hash = window.location.hash;
+
+        if (hash) {
+            requestAnimationFrame(() => {
+                document.querySelector(hash)?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+        }
 
     } catch (error) {
         console.error("Loading error:", error);
