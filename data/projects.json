@@ -1,28 +1,16 @@
-[{
-        "title": "CutLab Barbershop",
-        "description": "A modern website for a men's hair salon and barbershop in Erlangen, Germany, featuring services, price list, gallery, Google reviews and contact details. Built for a real client.",
-        "image": "./assets/projects/project11.png",
-        "live": "https://cutlab-barbershop.vercel.app/",
-        "tags": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Responsive"
-        ]
-    },
-    {
-        "title": "EuropeETF",
-        "description": "A strategic institutional website presenting a private European ETF-focused digital asset portfolio, with confidential enquiry and engagement sections. Built for a real client in the Netherlands.",
-        "image": "./assets/projects/project10.png",
-        "live": "https://europeetf.vercel.app/",
-        "tags": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Responsive"
-        ]
-    },
-    {
+[
+   {
+    "title": "Hadad Riyadh",
+    "description": "A complete responsive business website built for a Saudi client in Riyadh, showcasing ironwork, shades, privacy screens, sandwich panels, and tempered glass services with service pages, project gallery, blog, FAQ, and contact sections.",
+    "image": "./../assets/projects/project13.png",
+    "github": "",
+    "live": "https://hadad-kappa.vercel.app/",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ]
+}, {
         "title": "Coffee",
         "description": "A modern responsive coffee shop website built with HTML, CSS, and JavaScript, featuring a coffee menu, about section, customer reviews, table booking, and a polished café-focused design.",
         "image": "./../assets/projects/project7.png",
